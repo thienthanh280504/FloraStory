@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraStory - Ngôn Ngữ & Những Câu Chuyện Về Loài Hoa</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+
+    <!-- Reading Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- ============================================================
+         HERO NAVBAR — Floating Pill Style
+         ============================================================ -->
+    <header class="hero-navbar" id="heroNavbar">
+        <div class="hero-pill">
+            <a href="index.html" class="hero-nav-logo" aria-label="FloraStory - Trang chủ">
+                <span class="hero-logo-icon"><i class="fa-solid fa-spa"></i></span>
+                <span class="hero-logo-text">FloraStory</span>
+            </a>
+
+            <nav class="hero-nav-links" id="heroNavMenu" aria-label="Menu chính">
+                <span class="nav-indicator" aria-hidden="true"></span>
+                <a href="index.html" class="hero-nav-link active" aria-current="page">Trang chủ</a>
+                <a href="about.html" class="hero-nav-link">Về FloraStory</a>
+                <a href="stories.html" class="hero-nav-link">Câu chuyện hoa</a>
+                <a href="shops.html" class="hero-nav-link">Cửa hàng hoa</a>
+            </nav>
+
+            <div class="hero-nav-right">
+                <a href="shops.html" class="hero-cta-btn">
+                    <span>Đặt hoa</span>
+                    <span class="hero-cta-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <button class="hero-mobile-btn" id="heroMobileBtn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="heroMobileMenu">
+                    <span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-mobile-menu" id="heroMobileMenu">
+            <a href="index.html" class="hero-mobile-link active" aria-current="page"><span class="mtext">Trang chủ</span></a>
+            <a href="about.html" class="hero-mobile-link"><span class="mtext">Về FloraStory</span></a>
+            <a href="stories.html" class="hero-mobile-link"><span class="mtext">Câu chuyện hoa</span></a>
+            <a href="shops.html" class="hero-mobile-link"><span class="mtext">Cửa hàng hoa</span></a>
+            <a href="shops.html" class="hero-mobile-cta">Đặt hoa ngay <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <!-- ============================================================
+         HERO — Full-Bleed (chỉ giới thiệu, không lặp nội dung trang khác)
+         ============================================================ -->
+    <section class="hero-fullbleed hero-slider" id="heroSlider" aria-roledescription="carousel" aria-label="Hình ảnh các loài hoa">
+
+        <!-- Ảnh nền slideshow -->
+        <div class="hero-slides">
+            <img class="hero-slide is-active" src="https://images.unsplash.com/photo-1486102515046-44130769cb25?auto=format&fit=crop&w=1920&q=85" alt="Hoa ly trắng" fetchpriority="high" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1538947051459-6b56a0ab9e34?auto=format&fit=crop&w=1920&q=85'">
+            <img class="hero-slide" src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=1920&q=85" alt="Hoa hướng dương dưới nắng" loading="lazy">
+            <img class="hero-slide" src="https://images.unsplash.com/photo-1561897519-6e4fbd1fbc41?auto=format&fit=crop&w=1920&q=85" alt="Đóa hoa hồng phấn" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1687487055520-894d8fcc45a6?auto=format&fit=crop&w=1920&q=85'">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-content-inner">
+                <!-- Chữ theo từng slide (xếp chồng, đổi bằng hiệu ứng mờ) -->
+                <div class="hero-slide-texts" aria-live="polite">
+                    <div class="hero-text-block hero-slide-text is-active">
+                        <h1 class="hero-headline">Mỗi Đóa Hoa Là Một Lời Chưa Nói</h1>
+                        <p class="hero-subtext">Học cách đọc sắc màu, mùa nở và thông điệp ẩn sau từng cánh hoa — để lần tới bạn trao đi, hoa sẽ nói thay bạn.</p>
+                    </div>
+                    <div class="hero-text-block hero-slide-text">
+                        <h2 class="hero-headline">Sắc Vàng — Niềm Vui Rực Nắng</h2>
+                        <p class="hero-subtext">Một lời chúc may mắn, một cái ôm cho tình bạn — món quà khiến ngày thường cũng sáng hơn.</p>
+                    </div>
+                    <div class="hero-text-block hero-slide-text">
+                        <h2 class="hero-headline">Sắc Hồng — Lời Cảm Ơn Dịu Dàng</h2>
+                        <p class="hero-subtext">Khi lời biết ơn khó nói thành câu, một đóa hoa hồng nhạt sẽ nói thay bạn.</p>
+                    </div>
+                </div>
+
+                <div class="hero-cta-row">
+                    <a href="#hoa-hom-nay" class="hero-btn-primary">
+                        <i class="fa-solid fa-seedling"></i> Hoa của hôm nay
+                    </a>
+                    <a href="#sac-mau" class="hero-btn-text">
+                        Ngôn ngữ sắc màu <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Điều khiển slideshow -->
+            <div class="hero-slider-bar">
+                <div class="hero-dots" role="tablist">
+                    <button class="hero-dot is-active" type="button" aria-label="Ảnh 1"><span></span></button>
+                    <button class="hero-dot" type="button" aria-label="Ảnh 2"><span></span></button>
+                    <button class="hero-dot" type="button" aria-label="Ảnh 3"><span></span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="home-main">
+
+        <!-- ============================================================
+             1. HOA CỦA HÔM NAY
+             ============================================================ -->
+        <section class="home-section" id="hoa-hom-nay">
+            <div class="container">
+                <div class="home-section-head">
+                    <span class="hero-subtitle-tag">Mỗi ngày một đóa</span>
+                    <h2 class="home-h2">Hoa Của Hôm Nay</h2>
+                    <p class="home-lead">Mỗi ngày FloraStory chọn một loài hoa cùng thông điệp của nó. Thích một gợi ý khác? Hãy bấm đổi hoa.</p>
+                </div>
+
+                <div class="daily-card" id="dailyCard">
+                    <div class="daily-bloom" aria-hidden="true">
+                        <svg viewBox="0 0 200 200" class="bloom-svg">
+                            <g class="bloom-petals">
+                                <ellipse cx="100" cy="52" rx="26" ry="44" />
+                                <ellipse cx="100" cy="52" rx="26" ry="44" transform="rotate(60 100 100)" />
+                                <ellipse cx="100" cy="52" rx="26" ry="44" transform="rotate(120 100 100)" />
+                                <ellipse cx="100" cy="52" rx="26" ry="44" transform="rotate(180 100 100)" />
+                                <ellipse cx="100" cy="52" rx="26" ry="44" transform="rotate(240 100 100)" />
+                                <ellipse cx="100" cy="52" rx="26" ry="44" transform="rotate(300 100 100)" />
+                            </g>
+                            <circle cx="100" cy="100" r="20" class="bloom-center" />
+                        </svg>
+                    </div>
+
+                    <div class="daily-info">
+                        <span class="daily-date" id="dailyDate">Hôm nay</span>
+                        <h3 class="daily-name" id="dailyName">Hoa Hồng Đỏ</h3>
+                        <p class="daily-latin" id="dailyLatin">Rosa</p>
+                        <p class="daily-meaning" id="dailyMeaning">Tình yêu nồng nàn và sự say đắm.</p>
+                        <div class="daily-tags" id="dailyTags"></div>
+                        <div class="daily-tip">
+                            <i class="fa-regular fa-lightbulb"></i>
+                            <span id="dailyTip">Hợp để tặng người thương vào những dịp đặc biệt.</span>
+                        </div>
+                        <button class="daily-shuffle-btn" id="dailyShuffle" type="button">
+                            <i class="fa-solid fa-shuffle"></i> Đổi hoa khác
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             2. NGÔN NGỮ SẮC MÀU
+             ============================================================ -->
+        <section class="home-section home-section-dark" id="sac-mau">
+            <div class="container">
+                <div class="home-section-head">
+                    <span class="hero-subtitle-tag">Bảng màu cảm xúc</span>
+                    <h2 class="home-h2">Ngôn Ngữ Sắc Màu</h2>
+                    <p class="home-lead">Cùng một loài hoa, khác màu là khác lời nhắn. Đây là cách đọc nhanh trước khi chọn hoa.</p>
+                </div>
+
+                <div class="color-grid">
+                    <div class="color-card" style="--swatch:#B91C1C">
+                        <span class="color-swatch"></span>
+                        <h3 class="color-name">Đỏ</h3>
+                        <p class="color-text">Tình yêu nồng cháy, đam mê và lòng can đảm.</p>
+                    </div>
+                    <div class="color-card" style="--swatch:#F472B6">
+                        <span class="color-swatch"></span>
+                        <h3 class="color-name">Hồng</h3>
+                        <p class="color-text">Sự dịu dàng, lòng biết ơn và tình cảm mới chớm.</p>
+                    </div>
+                    <div class="color-card" style="--swatch:#FFFFFF">
+                        <span class="color-swatch"></span>
+                        <h3 class="color-name">Trắng</h3>
+                        <p class="color-text">Thuần khiết, trong sáng và một khởi đầu mới.</p>
+                    </div>
+                    <div class="color-card" style="--swatch:#EAB308">
+                        <span class="color-swatch"></span>
+                        <h3 class="color-name">Vàng</h3>
+                        <p class="color-text">Niềm vui, tình bạn và lời chúc may mắn.</p>
+                    </div>
+                    <div class="color-card" style="--swatch:#7C3AED">
+                        <span class="color-swatch"></span>
+                        <h3 class="color-name">Tím</h3>
+                        <p class="color-text">Sự thủy chung, nét bí ẩn và nỗi nhớ nhung.</p>
+                    </div>
+                    <div class="color-card" style="--swatch:#EA580C">
+                        <span class="color-swatch"></span>
+                        <h3 class="color-name">Cam</h3>
+                        <p class="color-text">Nhiệt huyết, năng lượng và sự khích lệ.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             3. HOA THEO MÙA
+             ============================================================ -->
+        <section class="home-section" id="theo-mua">
+            <div class="container">
+                <div class="home-section-head">
+                    <span class="hero-subtitle-tag">Lịch nở hoa</span>
+                    <h2 class="home-h2">Hoa Theo Mùa</h2>
+                    <p class="home-lead">Chọn đúng mùa, hoa tươi lâu hơn và đẹp nhất. Gợi ý các loài hoa quen thuộc ở Việt Nam.</p>
+                </div>
+
+                <div class="season-grid">
+                    <div class="season-card">
+                        <span class="season-icon"><i class="fa-solid fa-seedling"></i></span>
+                        <h3 class="season-name">Xuân</h3>
+                        <span class="season-months">Tháng 1 – 3</span>
+                        <ul class="season-list">
+                            <li>Hoa Đào</li>
+                            <li>Hoa Mai</li>
+                            <li>Tulip</li>
+                        </ul>
+                    </div>
+                    <div class="season-card">
+                        <span class="season-icon"><i class="fa-solid fa-sun"></i></span>
+                        <h3 class="season-name">Hạ</h3>
+                        <span class="season-months">Tháng 4 – 6</span>
+                        <ul class="season-list">
+                            <li>Phượng Vĩ</li>
+                            <li>Bằng Lăng</li>
+                            <li>Hoa Súng</li>
+                        </ul>
+                    </div>
+                    <div class="season-card">
+                        <span class="season-icon"><i class="fa-solid fa-leaf"></i></span>
+                        <h3 class="season-name">Thu</h3>
+                        <span class="season-months">Tháng 7 – 9</span>
+                        <ul class="season-list">
+                            <li>Cúc Họa Mi</li>
+                            <li>Thạch Thảo</li>
+                            <li>Hoa Sữa</li>
+                        </ul>
+                    </div>
+                    <div class="season-card">
+                        <span class="season-icon"><i class="fa-regular fa-snowflake"></i></span>
+                        <h3 class="season-name">Đông</h3>
+                        <span class="season-months">Tháng 10 – 12</span>
+                        <ul class="season-list">
+                            <li>Dã Quỳ</li>
+                            <li>Hoa Cải Vàng</li>
+                            <li>Hoa Trà Mi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             4. TRÍCH DẪN + LỜI MỜI
+             ============================================================ -->
+        <section class="home-section home-section-quote home-section-dark">
+            <div class="container container-narrow text-center">
+                <span class="hero-subtitle-tag">Cửa hàng hoa</span>
+                <h2 class="home-quote">Đã biết hoa muốn nói gì, giờ là lúc gửi đi.</h2>
+                <p class="home-quote-sub">Tìm một tiệm hoa gần bạn, xem mẫu hoa, giá và liên hệ đặt hoa trực tiếp qua điện thoại hoặc Zalo.</p>
+                <a href="shops.html" class="home-cta-link">
+                    Tìm shop hoa gần bạn <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Minimalist Footer -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <div class="footer-content">
+                <a href="index.html" class="brand-logo footer-logo">
+                    <span class="logo-icon"><i class="fa-solid fa-spa"></i></span>
+                    <span class="logo-text">FloraStory<span class="logo-dot">.</span></span>
+                </a>
+                <p class="footer-tagline">Nơi lưu giữ những câu chuyện và ngôn ngữ sâu lắng của loài hoa</p>
+                <div class="footer-nav">
+                    <a href="index.html">Trang chủ</a>
+                    <a href="about.html">Về FloraStory</a>
+                    <a href="stories.html">Câu chuyện hoa</a>
+                    <a href="shops.html">Cửa hàng hoa</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 FloraStory. Tất cả quyền được bảo lưu.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Social Chat Widget -->
+    <div class="floating-chat-widget" id="chatWidget">
+        <div class="chat-popover" id="chatPopover">
+            <div class="chat-popover-header">
+                <span>Kết nối FloraStory</span>
+            </div>
+            <div class="chat-social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link-item fb" title="Facebook FloraStory">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link-item ig" title="Instagram FloraStory">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link-item tiktok" title="TikTok FloraStory">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+                <a href="https://threads.net" target="_blank" rel="noopener noreferrer" class="social-link-item threads" title="Threads FloraStory">
+                    <svg class="social-icon-svg" viewBox="0 0 192 192" width="20" height="20" fill="currentColor">
+                        <path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.481 72.7335C80.8545 64.5681 89.2482 60.3444 100.485 60.3444C118.232 60.3444 123.673 73.0807 124.384 89.5445C116.899 87.8093 108.529 87.2736 99.3086 88.0055C70.932 90.2575 54.4965 106.634 55.4526 128.847C55.9189 139.684 61.6444 148.814 70.9701 153.697C79.8055 158.324 90.963 159.208 101.408 156.166C114.398 152.38 122.569 142.736 126.793 129.569C130.638 138.082 136.963 145.094 145.474 149.771L153.861 136.096C142.842 129.356 137.759 116.812 138.583 99.4173C143.125 101.815 147.247 104.704 150.849 108.069L161.761 95.8459C155.846 90.3168 149.034 85.836 141.537 88.9883ZM102.585 141.258C90.1706 144.877 78.4727 137.917 77.8927 124.425C77.3486 111.802 87.9715 102.735 105.158 101.371C110.606 100.938 116.486 101.229 122.569 102.261C120.732 127.378 112.551 138.351 102.585 141.258Z"/>
+                    </svg>
+                    <span>Threads</span>
+                </a>
+                <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-link-item pinterest" title="Pinterest FloraStory">
+                    <i class="fa-brands fa-pinterest"></i>
+                    <span>Pinterest</span>
+                </a>
+            </div>
+        </div>
+
+        <button class="chat-toggle-btn" id="chatToggleBtn" title="Bóng chat mạng xã hội" aria-label="Bóng chat Mạng xã hội">
+            <div class="chat-icon-rotator">
+                <i class="fa-solid fa-comments active"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <svg class="social-icon-svg" viewBox="0 0 192 192" width="20" height="20" fill="currentColor">
+                    <path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.481 72.7335C80.8545 64.5681 89.2482 60.3444 100.485 60.3444C118.232 60.3444 123.673 73.0807 124.384 89.5445C116.899 87.8093 108.529 87.2736 99.3086 88.0055C70.932 90.2575 54.4965 106.634 55.4526 128.847C55.9189 139.684 61.6444 148.814 70.9701 153.697C79.8055 158.324 90.963 159.208 101.408 156.166C114.398 152.38 122.569 142.736 126.793 129.569C130.638 138.082 136.963 145.094 145.474 149.771L153.861 136.096C142.842 129.356 137.759 116.812 138.583 99.4173C143.125 101.815 147.247 104.704 150.849 108.069L161.761 95.8459C155.846 90.3168 149.034 85.836 141.537 88.9883ZM102.585 141.258C90.1706 144.877 78.4727 137.917 77.8927 124.425C77.3486 111.802 87.9715 102.735 105.158 101.371C110.606 100.938 116.486 101.229 122.569 102.261C120.732 127.378 112.551 138.351 102.585 141.258Z"/>
+                </svg>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <i class="fa-solid fa-xmark icon-close"></i>
+            <span class="chat-pulse-ring"></span>
+        </button>
+    </div>
+
+    <button class="back-to-top" id="backToTopBtn" title="Lên đầu trang" aria-label="Lên đầu trang">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

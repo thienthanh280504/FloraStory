@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về FloraStory - Ngôn Ngữ Loài Hoa</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="inner-page">
+
+    <!-- Reading Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Pill Navbar (Light variant) -->
+    <header class="hero-navbar" id="heroNavbar">
+        <div class="hero-pill">
+            <a href="index.html" class="hero-nav-logo" aria-label="FloraStory - Trang chủ">
+                <span class="hero-logo-icon"><i class="fa-solid fa-spa"></i></span>
+                <span class="hero-logo-text">FloraStory</span>
+            </a>
+
+            <nav class="hero-nav-links" id="heroNavMenu" aria-label="Menu chính">
+                <span class="nav-indicator" aria-hidden="true"></span>
+                <a href="index.html" class="hero-nav-link">Trang chủ</a>
+                <a href="about.html" class="hero-nav-link active" aria-current="page">Về FloraStory</a>
+                <a href="stories.html" class="hero-nav-link">Câu chuyện hoa</a>
+                <a href="shops.html" class="hero-nav-link">Cửa hàng hoa</a>
+            </nav>
+
+            <div class="hero-nav-right">
+                <a href="shops.html" class="hero-cta-btn">
+                    <span>Đặt hoa</span>
+                    <span class="hero-cta-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <button class="hero-mobile-btn" id="heroMobileBtn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="heroMobileMenu">
+                    <span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-mobile-menu" id="heroMobileMenu">
+            <a href="index.html" class="hero-mobile-link"><span class="mtext">Trang chủ</span></a>
+            <a href="about.html" class="hero-mobile-link active" aria-current="page"><span class="mtext">Về FloraStory</span></a>
+            <a href="stories.html" class="hero-mobile-link"><span class="mtext">Câu chuyện hoa</span></a>
+            <a href="shops.html" class="hero-mobile-link"><span class="mtext">Cửa hàng hoa</span></a>
+            <a href="shops.html" class="hero-mobile-cta">Đặt hoa ngay <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Article Container -->
+        <article class="about-container">
+            <div class="container container-narrow">
+                <header class="about-header text-center">
+                    <span class="hero-subtitle-tag">Sứ Mệnh Thương Hiệu</span>
+                    <h1 class="about-title">Về FloraStory - Nơi Ngôn Ngữ Loài Hoa Cất Lời</h1>
+                    <p class="about-lead">Chào mừng bạn đến với FloraStory. Chúng mình tin rằng mỗi đóa hoa không chỉ mang sắc màu rực rỡ, mà còn ẩn chứa một câu chuyện lắng đọng về cuộc sống và tình cảm con người.</p>
+                </header>
+
+                <div class="about-cover-image">
+                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1200&q=80" alt="Không gian hoa FloraStory" class="about-img">
+                </div>
+
+                <div class="about-content-body">
+                    <h2>Hành Trình Của Chúng Mình</h2>
+                    <p>Giữa nhịp sống hiện đại hối hả, FloraStory được tạo ra như một khoảng không gian lặng yên giúp bạn dừng chân, ngắm nhìn vẻ đẹp tự nhiên và cảm nhận những thông điệp sâu lắng từ thế giới loài hoa.</p>
+                    
+                    <p>Từ sự tích hoa Bỉ Ngạn huyền bí, biểu tượng tình yêu son sắt của hoa Hướng Dương, cho đến sắc tím chữa lành của Lavender — mỗi bài viết tại FloraStory đều được chăm chút kỹ lưỡng bằng cả trái tim và sự trân trọng dành cho thiên nhiên.</p>
+
+                    <h2>Giá Trị Cốt Lõi</h2>
+                    <ul class="about-values-list">
+                        <li><strong>Chân Thành & Lắng Đọng:</strong> Tôn vinh vẻ đẹp tự nhiên và cảm xúc chân thật qua từng câu chuyện.</li>
+                        <li><strong>Chữa Lành Tâm Hồn:</strong> Mang lại sự bình yên, thư thái cho độc giả qua ngôn ngữ tinh tế của hoa.</li>
+                        <li><strong>Đồng Hành Cùng Thiên Nhiên:</strong> Truyền cảm hứng yêu mến cây cỏ, hoa lá và giữ gìn nét đẹp cuộc sống.</li>
+                    </ul>
+
+                    <div class="about-quote-box">
+                        <blockquote class="about-quote">
+                            "Hoa không cố gắng nở chỉ để vượt qua những đóa hoa khác. Hoa chỉ đơn giản là nở rực rỡ theo cách của chính mình."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Minimalist Footer -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <div class="footer-content">
+                <a href="index.html" class="brand-logo footer-logo">
+                    <span class="logo-icon"><i class="fa-solid fa-spa"></i></span>
+                    <span class="logo-text">FloraStory<span class="logo-dot">.</span></span>
+                </a>
+                <p class="footer-tagline">Nơi lưu giữ những câu chuyện và ngôn ngữ sâu lắng của loài hoa</p>
+                <div class="footer-nav">
+                    <a href="index.html">Trang chủ</a>
+                    <a href="about.html">Về FloraStory</a>
+                    <a href="stories.html">Câu chuyện hoa</a>
+                    <a href="shops.html">Cửa hàng hoa</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 FloraStory. Tất cả quyền được bảo lưu.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Social Chat Widget (Bóng Chat Kết Nối Mạng Xã Hội) -->
+    <div class="floating-chat-widget" id="chatWidget">
+        <div class="chat-popover" id="chatPopover">
+            <div class="chat-popover-header">
+                <span>Kết nối FloraStory</span>
+            </div>
+            <div class="chat-social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link-item fb" title="Facebook FloraStory">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link-item ig" title="Instagram FloraStory">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link-item tiktok" title="TikTok FloraStory">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+                <a href="https://threads.net" target="_blank" rel="noopener noreferrer" class="social-link-item threads" title="Threads FloraStory">
+                    <svg class="social-icon-svg" viewBox="0 0 192 192" width="20" height="20" fill="currentColor">
+                        <path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.481 72.7335C80.8545 64.5681 89.2482 60.3444 100.485 60.3444C118.232 60.3444 123.673 73.0807 124.384 89.5445C116.899 87.8093 108.529 87.2736 99.3086 88.0055C70.932 90.2575 54.4965 106.634 55.4526 128.847C55.9189 139.684 61.6444 148.814 70.9701 153.697C79.8055 158.324 90.963 159.208 101.408 156.166C114.398 152.38 122.569 142.736 126.793 129.569C130.638 138.082 136.963 145.094 145.474 149.771L153.861 136.096C142.842 129.356 137.759 116.812 138.583 99.4173C143.125 101.815 147.247 104.704 150.849 108.069L161.761 95.8459C155.846 90.3168 149.034 85.836 141.537 88.9883ZM102.585 141.258C90.1706 144.877 78.4727 137.917 77.8927 124.425C77.3486 111.802 87.9715 102.735 105.158 101.371C110.606 100.938 116.486 101.229 122.569 102.261C120.732 127.378 112.551 138.351 102.585 141.258Z"/>
+                    </svg>
+                    <span>Threads</span>
+                </a>
+                <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-link-item pinterest" title="Pinterest FloraStory">
+                    <i class="fa-brands fa-pinterest"></i>
+                    <span>Pinterest</span>
+                </a>
+            </div>
+        </div>
+        
+        <button class="chat-toggle-btn" id="chatToggleBtn" title="Bóng chat mạng xã hội" aria-label="Bóng chat Mạng xã hội">
+            <div class="chat-icon-rotator">
+                <i class="fa-solid fa-comments active"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <svg class="social-icon-svg" viewBox="0 0 192 192" width="20" height="20" fill="currentColor">
+                    <path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.481 72.7335C80.8545 64.5681 89.2482 60.3444 100.485 60.3444C118.232 60.3444 123.673 73.0807 124.384 89.5445C116.899 87.8093 108.529 87.2736 99.3086 88.0055C70.932 90.2575 54.4965 106.634 55.4526 128.847C55.9189 139.684 61.6444 148.814 70.9701 153.697C79.8055 158.324 90.963 159.208 101.408 156.166C114.398 152.38 122.569 142.736 126.793 129.569C130.638 138.082 136.963 145.094 145.474 149.771L153.861 136.096C142.842 129.356 137.759 116.812 138.583 99.4173C143.125 101.815 147.247 104.704 150.849 108.069L161.761 95.8459C155.846 90.3168 149.034 85.836 141.537 88.9883ZM102.585 141.258C90.1706 144.877 78.4727 137.917 77.8927 124.425C77.3486 111.802 87.9715 102.735 105.158 101.371C110.606 100.938 116.486 101.229 122.569 102.261C120.732 127.378 112.551 138.351 102.585 141.258Z"/>
+                </svg>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <i class="fa-solid fa-xmark icon-close"></i>
+            <span class="chat-pulse-ring"></span>
+        </button>
+    </div>
+
+    <button class="back-to-top" id="backToTopBtn" title="Lên đầu trang" aria-label="Lên đầu trang">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
